@@ -11,6 +11,7 @@ ignore
 	$sudo apt-get install default-jdk autoconf automake libtool
 	$sudo apt-get install python libgtk2.0-dev pkg-config
 	$sudo apt-get install python-pip python-numpy swig python-dev
+	$sudo apt-get install gcc-4.8 g++-4.8
 	$pip install wheel
 	$sudo apt-get install python3-pip python3-numpy swig python3-dev
 	$pip3 install wheel
@@ -25,8 +26,11 @@ ignore
 	$vim ~/.bashrc 
 	//Add the following line at end
    	export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-
-### 2.3 Increase system swap size (optional, RAM <=2G)
+### 2.3 Setup gcc/g++
+	$sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 100
+	$sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 100
+	
+### 2.4 Increase system swap size (optional, RAM <=2G)
 Please refer to the following
 [link](https://bogdancornianu.com/change-swap-size-in-ubuntu/).
 

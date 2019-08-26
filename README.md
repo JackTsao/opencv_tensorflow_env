@@ -50,7 +50,7 @@ Please refer to the following
 
 ## 5. Download & compile Bazel 0.24.1
 	$cd ~/workspace
-	$wget https://github.com/bazelbuild/bazel/releases/download/0.26.0/bazel-0.24.1-dist.zip
+	$wget https://github.com/bazelbuild/bazel/releases/download/0.24.1/bazel-0.24.1-dist.zip
 	$unzip -d bazel ./bazel-0.24.1-dist.zip
 	$cd bazel
 	
